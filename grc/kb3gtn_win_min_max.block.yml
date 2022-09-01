@@ -1,0 +1,29 @@
+id: kb3gtn_win_min_max
+label: win_min_max
+category: '[kb3gtn]'
+
+templates:
+  imports: from gnuradio import kb3gtn
+  make: kb3gtn.win_min_max(${win_size})
+
+parameters:
+- id: win_size
+  label: window size
+  dtype: int
+  default: number of inputs to measure over
+
+inputs:
+- label: in
+  dtype: float
+
+outputs:
+- label: max
+  dtype: float
+  vlen: 1
+
+- label: min
+  dtype: float
+  vlen: 1
+
+file_format: 1
+

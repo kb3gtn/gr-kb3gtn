@@ -1,0 +1,11 @@
+This is the kb3gtn-write-a-block package meant as a guide to building
+out-of-tree packages. To use the kb3gtn blocks, the Python namespaces
+is in 'kb3gtn', which is imported as:
+
+    import kb3gtn
+
+See the Doxygen documentation for details about the blocks available
+in this package. A quick listing of the details can be found in Python
+after importing by using:
+
+    help(kb3gtn)
